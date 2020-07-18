@@ -24,7 +24,7 @@ export class ProductService
 
     }
 
-    //Observable
+    
 getProducts(): Observable<IProduct[]> {
 
     return this.http.get<IProduct[]>(this.productUrl).pipe(tap(data=>console.log('All :'+JSON.stringify(data))),
